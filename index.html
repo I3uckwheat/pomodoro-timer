@@ -3,23 +3,27 @@
 
 <head>
   <link href="./styles.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript"  src = "./jQuery.js"></script>
+  <script type="text/javascript" src="./jQuery.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
   <title>Pomodoro Project: TOP</title>
 </head>
 
 <body>
-  <div class="container main">
+  <div class="container_main">
+    <div class="session_container">
       <p>Session: <span id="session"></span></p>
-    <div class = "container button session">
-      <button class="session_up button">Up</button>
-      <button class="session_down button">Down</button>
-    </div>
-      <p>Break: <span id="break"></span></p>
-      <div class = "container button break">
-         <button class="break_up button">Up</button>
-         <button class="break_down button">Down</button>
+      <div class="container button">
+        <button class="up session_button counters">Up</button>
+        <button class="down session_button counters">Down</button>
       </div>
+    </div>
+    <div class="break_container">
+      <p>Break: <span id="break"></span></p>
+      <div class="container button">
+        <button class="up break_button counters">Up</button>
+        <button class="down break_button counters">Down</button>
+      </div>
+    </div>
   </div>
   <script src="./java.js"></script>
 </body>
